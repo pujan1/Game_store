@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 Game =require('./models/game');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://pujan:Omg!tsgunn3r@ds023694.mlab.com:23694/bookstore');
+mongoose.connect('mongodb://<username>:<password>@mongoDB link');  /// insert your db link here
 var db = mongoose.connection;
 
 app.get('/api/games', function(req, res){
